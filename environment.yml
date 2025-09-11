@@ -1,0 +1,16 @@
+name: mater
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.11
+  - numpy>=2.3.3
+  - matplotlib>=3.10.6
+  - scipy>=1.16.1
+  - pandas>=2.3.2
+  - polars>=1.33.1
+  - pytest>=8.4.2
+  - pytest-cov>=7.0.0
+  - pip
+  - pip:
+    - -e .  # Install your package in development mode
