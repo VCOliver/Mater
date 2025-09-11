@@ -16,9 +16,9 @@ if __name__ == "__main__":
         
         # Test if specific variables are accessible
         if 'fs' in globals():
-            print(f"\nfs = {fs}")
+            print(f"\nfs = {fs}") # type: ignore
         if 'x' in globals():
-            print(f"x shape = {x.shape if hasattr(x, 'shape') else type(x)}")
+            print(f"x shape = {x.shape if hasattr(x, 'shape') else type(x)}") # type: ignore
             
     except FileNotFoundError:
         print("\nECG_1.mat not found, testing with test_data.mat")
