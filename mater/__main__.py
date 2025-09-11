@@ -10,15 +10,15 @@ if __name__ == "__main__":
     
     # Test loading (assuming you have ECG_1.mat file)
     try:
-        load("ECG_1.mat")
+        load("test_files/ECG_1.mat")
         print("\nVariables after loading:")
         who()
         
         # Test if specific variables are accessible
         if 'fs' in globals():
-            print(f"\nfs = {fs}")
+            print(f"\nfs = {fs}") # type: ignore
         if 'x' in globals():
-            print(f"x shape = {x.shape if hasattr(x, 'shape') else type(x)}")
+            print(f"x shape = {x.shape if hasattr(x, 'shape') else type(x)}") # type: ignore
             
     except FileNotFoundError:
         print("\nECG_1.mat not found, testing with test_data.mat")
