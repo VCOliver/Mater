@@ -10,7 +10,7 @@ if __name__ == "__main__":
     
     # Test loading (assuming you have ECG_1.mat file)
     try:
-        load("ECG_1.mat")
+        load("test_files/ECG_1.mat")
         print("\nVariables after loading:")
         who()
         
